@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Edu+NSW+ACT+Foundation:wght@500&family=Lobster+Two&family=Montserrat:wght@500&family=Roboto+Slab:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&display=swap');
+@import url("https://unpkg.com/open-props");
+@import url("https://unpkg.com/open-props/normalize.min.css");
+
+
+
+body {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;   
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_link li a:hover{
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+  .tagline1 {
+    font-size: 3em;
+    margin-top: 10%;
+    color: #edf0f1;
+    font-family: 'DM Serif Display', serif;
+    
+}
+
+.tagline2 {
+    font-size: 18px;
+    margin-top: 10%;
+    color: #edf0f1;
+    font-family: 'Courgette', cursive;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 50px;
+  }
+
+ /* If you want the content centered horizontally and vertically */
+ .centered {
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 20%;
+    
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 200px;
+  }
+
+  .tag_container {
+    padding: 10% 20% 10% 10%;
+  }
+
+
+  .footer {
+    /* text-align: center; */
+    font-size: 3em;
+    margin-top: 40%;
+    text-align: center;
+    background-color: #edf0f1;
+    overflow: hidden;
+    padding-left: 30%;
+}
+
+.footer_item {
+    color: #24252A;
+    font-size: 30px;
+    padding-left: 2%;
+}
+
+
+.media-scroller {
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    grid-auto-columns: 19%;
+
+    /* padding: 0 var(--size-3) var(--size-3); */
+    padding: 3% 20% 0;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    
+}
+
+.media-element {
+    width: 400px;
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--size-3);
+    padding: var(--size-3); 
+    background: var(--surface-2);
+    border-radius: var(--radius-2);
+}
+
+.media-element > img {
+    inline-size: 100%;
+    object-fit: cover;
+}
+
+.scroll-head{
+    color: white;
+    background-color: #24252A;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.media-scroller::-webkit-scrollbar {
+    width: 2em;
+}
+
+.media-scroller::-webkit-scrollbar-thumb {
+    background: rgba(0,136,169,1);
+    border-radius: 100vw;
+}
+.media-scroller::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,136,169,0.8);
+}
+
+.scroll-heading {
+    color: #edf0f1;
+    margin-top: 25%;
+    margin-left: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+  

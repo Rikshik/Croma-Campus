@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/first.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Book App</title>
+
+<style>
+
+* {
+box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+float: left;
+width: 50%;
+padding: 20px 0px 30px;
+height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1 class="logo">Libverse</h1>
+  <nav>
+    <ul class="nav_link">
+        <li><a href="#">Authors</a> </li>
+        <li><a href="#">Recommendations</a> </li>
+        <li><a href="http://127.0.0.1:5500/Projects/BOOKAPP1/favorites.html">Favorites</a> </li>
+    </ul>
+  </nav>
+  <a class="cta" href="http://127.0.0.1:5500/Projects/BOOKAPP1/login.html"><button>Log In</button></a>
+  <a class="cta" href="http://127.0.0.1:5500/Projects/BOOKAPP1/register.html"><button>Register</button></a>
+</header> 
+
+
+<div class="row">
+  <div class="column">
+    <div class="tag_container">
+      <h2 class="tagline1">Read Anywhere.</h2>
+      <p class="tagline2">Enjoy reading books on Libverse anytime anywhere.</p>
+      <form action="https://openlibrary.org/search" method="get" class="example">
+        <input type="text" placeholder="Search.." name="q">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form> 
+    </div>
+  </div>
+  <div class="column">
+    <img class="centered" src="images/Untitled.png" alt="capture">
+  </div>
+</div>
+
+<!-- Scrollbar -->
+<h3 class="scroll-heading">Recommendations</h3>
+<div class="media-scroller">
+  <div class="media element"><img src="images/book1.PNG" alt="book1"><p class="scroll-head"> A Million Thoughts</p></div>
+  <div class="media element"><img src="images/book2.PNG" alt="book2"><p class="scroll-head"> Death Note</p></div>
+  <div class="media element"><img src="images/book3.PNG" alt="book3"><p class="scroll-head"> You Better Be Lightning</p></div>
+  <div class="media element"><img src="images/book4.PNG" alt="book4"><p class="scroll-head"> Fear Not Be Strong</p></div>
+  <div class="media element"><img src="images/book5.PNG" alt="book5"><p class="scroll-head"> Ikigai</p></div>
+  <div class="media element"><img src="images/book6.PNG" alt="book6"><p class="scroll-head"> The Art of Reading Minds</p></div>
+  <div class="media element"><img src="images/book7.PNG" alt="book7"><p class="scroll-head"> Thee Alchemist</p></div>
+  <div class="media element"><img src="images/book8.PNG" alt="book8"><p class="scroll-head"> We Are Totally Normal</p></div>
+  <div class="media element"><img src="images/book9.PNG" alt="book9"><p class="scroll-head"> The House Of Strange Stories</p></div>
+  <div class="media element"><img src="images/book10.PNG" alt="book10"><p class="scroll-head"> Power Of Your Subconscious Mind</p></div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>
+    <a class="footer_item" href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a class="footer_item" href="#"><i class="fa-brands fa-google-plus"></i></a>
+    <a class="footer_item" href="#"><i class="fa-brands fa-twitter"></i></a>
+    <a class="footer_item" href="#"><i class="fa-brands fa-linkedin"></i></a>
+  </p>
+</div>
+
+</body>
+</html>
